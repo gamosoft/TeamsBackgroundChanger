@@ -1,4 +1,4 @@
-﻿# Teams Background Changer
+# Teams Background Changer
 
 ## Introduction
 This project started as a way to add animated backgrounds to **Microsoft Teams**. By default you cannot just pick a *.gif* file and use it directly, so after reading some posts like this one:
@@ -47,5 +47,16 @@ You should change these values:
 As mentioned, run the app once, then open up **Teams** and choose the newly setup background.
 
 When you re-run the app, it will choose a different background and apply it.
+
+## Context menu
+Only for Windows, I have also created a registry file that allows you to set an image file as **Teams** background without having to open the settings menu, etc...
+
+Just install the provided *teams-background-shell.reg* file by doucle-clicking on it, it's just a basic **Powershell** script that copies the files into the desired location. They are copied with the names *background-changer.png* and *background-changer_thumb.png* to be in sync with the above specified settings. If for some reason you want to change these names it's very easy to edit the *.reg* file and put whatever you want.
+
+Onve you have it installed, just right-click on an image file and you'll see a popup like this one:
+
+![Context menu](./context-menu.png "Context menu")
+
+Same restrictions apply, that is, if you run it while sharing your camera it won't work.
 
 Hope you enjoy it!
