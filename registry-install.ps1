@@ -3,15 +3,16 @@ $RegistryPath = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Kind.Picture\shel
 $CommandPath  = 'Registry::HKEY_LOCAL_MACHINE\SOFTWARE\Classes\Kind.Picture\shell\assign-teams-background\command'
 $Label        = 'Assign as Teams Background'
 $IconKey      = 'Icon'
-$IconValue    = '%USERPROFILE%\AppData\Local\Microsoft\Teams\app.ico'
 ############################################
 # Old Teams => C:\Users\[username]\AppData\Roaming\Microsoft\Teams\Backgrounds\Uploads
 # $UploadsPath  = '$env:APPDATA\Microsoft\Teams\Backgrounds\Uploads'
 # $FileName     = 'background-changer'
+$IconValue    = '%USERPROFILE%\AppData\Local\Microsoft\Teams\app.ico'
 ############################################
 # New Teams => C:\Users\[username]\AppData\Local\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Backgrounds\Uploads
 $UploadsPath  = '$env:LOCALAPPDATA\Packages\MSTeams_8wekyb3d8bbwe\LocalCache\Microsoft\MSTeams\Backgrounds\Uploads'
-$FileName = '465b6c31-7a35-49fe-9082-54d40489d58b'
+$FileName     = '4d27205e-f3de-4f2d-becf-ed940bb5b979'
+# $IconValue    = 'C:\Program Files\WindowsApps\MSTeams_23202.1507.2283.7280_x64__8wekyb3d8bbwe\Images\TeamsForWorkNewBadgeLogo.scale-200.png'
 ############################################
 $CommandValue = 'PowerShell.exe -NoLogo -NoProfile -WindowStyle Hidden -Command "Copy-Item ''%1'' ' + $UploadsPath + '\' + $FileName + '.png; Copy-Item ''%1'' '+ $UploadsPath +'\' + $FileName + '_thumb.png;"'
 

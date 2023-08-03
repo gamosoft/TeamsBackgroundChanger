@@ -53,7 +53,7 @@ Only for Windows, I have also created a registry file that allows you to set an 
 
 Just install the provided *teams-background-shell.reg* file by doucle-clicking on it, it's just a basic **Powershell** script that copies the files into the desired location. They are copied with the names *background-changer.png* and *background-changer_thumb.png* to be in sync with the above specified settings. If for some reason you want to change these names it's very easy to edit the *.reg* file and put whatever you want.
 
-Onve you have it installed, just right-click on an image file and you'll see a popup like this one:
+Once you have it installed, just right-click on an image file and you'll see a popup like this one:
 
 ![Context menu](./context-menu.png "Context menu")
 
